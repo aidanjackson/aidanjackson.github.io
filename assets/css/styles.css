@@ -344,6 +344,31 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Media Queries
 --------------------------------------------------------------*/
+@media screen and (max-width: 480px) { 
+	#about img {
+		margin-left: 0;
+	}
+
+	.site-info {
+		padding: 0 10px;
+	}
+}
+
+@media screen and (max-width: 839px) { 
+	footer {
+		font-size: 90%;
+	}
+
+	.human-icon {
+		width: 10px;
+		height: 10px;
+	}
+
+	.site-landing {
+		height: 50vh;
+	}
+ } 
+
 @media screen and (max-width: 1024px) { 
 
 	h1, h2, h3, #landing p {
@@ -393,32 +418,6 @@ a:hover, a:active {
 		font-size: 100%;
 	}
 }
-
-@media screen and (max-width: 839px) { 
-	footer {
-		font-size: 90%;
-	}
-
-	.human-icon {
-		width: 10px;
-		height: 10px;
-	}
-
-	.site-landing {
-		height: 50vh;
-	}
- } 
-
-@media screen and (max-width: 480px) { 
-	#about img {
-		margin-left: 0;
-	}
-
-	.site-info {
-		padding: 0 10px;
-	}
-}
-
 
 /*--------------------------------------------------------------
 ## CSS Animations
