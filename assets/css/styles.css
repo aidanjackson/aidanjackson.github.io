@@ -346,7 +346,11 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 @media only screen and (max-device-width: 480px) { 
 
-	
+	.human-icon {
+		width: 10px;
+		height: 10px;
+	}
+
 	.site-landing {
 		height: 50vh;
 	}
@@ -357,13 +361,9 @@ a:hover, a:active {
 }
 
 @media only screen and (max-device-width: 768px) { 
+	
 	footer {
 		font-size: 90%;
-	}
-
-	.human-icon {
-		width: 10px;
-		height: 10px;
 	}
  } 
 
