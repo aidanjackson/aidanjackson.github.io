@@ -344,7 +344,7 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Media Queries
 --------------------------------------------------------------*/
-@media only screen and (min-device-width: 480px) { 
+@media only screen and (max-device-width: 480px) { 
 	#about img {
 		margin-left: 0;
 	}
@@ -354,7 +354,7 @@ a:hover, a:active {
 	}
 }
 
-@media only screen and (min-device-width: 768px) { 
+@media only screen and (max-device-width: 768px) { 
 	footer {
 		font-size: 90%;
 	}
@@ -369,7 +369,7 @@ a:hover, a:active {
 	}
  } 
 
-@media only screen and (min-device-width: 1024px) { 
+@media only screen and (max-deviwidth: 1024px) { 
 
 	h1, h2, h3, #landing p {
 		font-size: 170%;
