@@ -1,0 +1,436 @@
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+	color: #f3a712;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #f3a712;
+}
+
+a:hover, a:focus, a:active {
+	color: #F59724;
+}
+
+a:hover, a:active {
+	outline: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+.site-landing {
+	height: 95vh;
+	background: none;
+	position: relative;
+}
+
+.site-landing:before {
+	z-index: -1;
+	content: '';
+	position: absolute;
+	background-image: url("assets/raster/billie-holiday.png");
+	background-repeat: repeat;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.landing-video {
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	transform: translate(-50%, -50%);
+}
+
+			/*General Styles*/
+
+			body {
+				background: #2b5151; 
+			}
+
+			section {
+				background: #2b5151; 
+				padding-bottom: 50px;
+				max-width: 1024px;
+				margin: 0 auto;
+				padding: 25px 10px;
+			}
+
+			section h2 {
+				margin-bottom: 5%;
+			}
+
+			/*Typography*/
+
+			h1, h2, h3, li, a:visited {
+				color: #f3a712;
+				font-family: 'Playfair Display', serif;
+				position: relative;
+				display: inline-block;
+			}
+
+			li, li a {
+				text-decoration: none;
+				list-style: none;
+				font-size: 24px;
+				line-height: 50px;
+				-webkit-transition: 1s;
+    			transition: 1s;
+			}
+
+			li a:active {
+				text-decoration: line-through;
+			}
+
+			.strike-link {
+				position: relative;
+			}
+
+			.strike-link:before, .strike-link:after {
+			  content: '';
+			  position: absolute;
+			  width: 0%;
+			  height: 1px;
+			  top: 55%;
+			  margin-top: -0.5px;
+			  background: #f3a712;
+			}
+
+			.strike-link:before {
+			  left: -2.5px;
+			}
+			.strike-link:after {
+			  right: 1.5px;
+			  background: #f3a712;
+			  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+			}
+
+			.strike-link:hover:before {
+			  background: #f3a712;
+			  width: 100%;
+			  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+			}
+
+			.strike-link:hover:after {
+			  background: transparent;
+			  width: 100%;
+			  transition: 0s;
+			}
+
+			.strike-title a {
+				text-decoration: none;
+			}
+
+			.strike-title:before, .strike-title:after {
+			  width: 100%;
+			  content: '';
+			  position: absolute;
+			  height: 1px;
+			  top: 55%;
+			  margin-top: -0.5px;
+			  background: #f3a712;
+			}
+
+			.strike-title:before {
+			  left: -2.5px;
+			}
+			.strike-title:after {
+			  right: 2.5px;
+			}
+
+			/*Home and about specific text styles*/
+			#landing p, #about p, p, span {
+				color: #f3a712;
+				font-family: 'Fauna One', serif;
+			}
+
+			/*nav*/
+
+			.site-header {
+				display: inline-flex;
+				width: 100vw;
+				position: fixed;
+				z-index: 2;
+			}
+
+			.site-branding {
+				width: 400px;
+				padding-left: 100px;
+				text-align: center;
+			}
+
+			.site-branding h1 {
+				margin: 0;
+			}
+
+			.main-navigation {
+				padding-right: 20px;
+				display: inline-flex;
+				justify-content: flex-end;
+				width: 100%;
+			}
+
+			.main-navigation ul {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+			}
+
+			.main-navigation a {
+				font-size: 70%;
+			}
+
+			.nav-wrap {
+				width: 70%;
+				overflow: hidden;
+			}
+
+			.navicon-button {
+			  	display: none;
+			 	position: relative;
+			  	padding: 2.0625rem 1.5rem;
+			  	transition: 0.25s;
+			  	cursor: pointer;
+			  	user-select: none;
+			  	opacity: .8;
+			}
+			.navicon-button .navicon:before, .navicon-button .navicon:after {
+			  	transition: 0.25s;
+			}
+
+			.navicon {
+			  	position: relative;
+			  	width: 2rem;
+			  	height: .2125rem;
+			  	background: #f3a712;
+			  	transition: 0.5s;
+			}
+			.navicon:before, .navicon:after {
+			  	display: block;
+			  	content: "";
+			  	height: .2125rem;
+			  	width: 2rem;
+			  	background: #f3a712;
+			  	position: absolute;
+			  	z-index: -1;
+			  	transition: 0.5s 0.25s;
+			}
+			.navicon:before {
+			  	top: .625rem;
+			}
+			.navicon:after {
+			  	top: -.625rem;
+			}
+
+			.is-open:not(.steps) .navicon:before,
+			.is-open:not(.steps) .navicon:after {
+			  	top: 0 !important;
+			}
+
+			.is-open .navicon:before,
+			.is-open .navicon:after {
+			  	transition: 0.5s;
+			}
+
+			.is-open {
+			  	transform: scale(0.75);
+			}
+
+			/*Landing*/
+			/*Landing area styles*/
+			#landing {
+				position: relative;
+			    top: -20px;
+			    z-index: 1;
+				max-width: 100vw;
+				text-align: center;
+				overflow: hidden;
+				display: flex;
+   			 	justify-content: center;
+			}
+
+			/*Home text*/
+			#landing p {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 50%;
+				height: 50%;
+				overflow: auto;
+				margin: auto;
+				position: absolute;
+				top: 0; left: 0; bottom: 0; right: 0;
+				font-size: 120%;
+				z-index: 1;
+			}
+
+			.home_arrow {
+				position: absolute;
+				bottom: 10%;
+				-webkit-animation: POINT_DOWN 3s ease-in-out infinite;
+          		animation: POINT_DOWN 3s ease-in-out infinite;
+			}
+
+			/*Contact*/
+			/*Contact form styles*/
+			.contact-heading {
+				width: 100%;
+				text-align: center;
+			}
+
+			/*About*/
+			/*about section styles*/
+			#about {
+				position: relative;
+			}
+
+			/*about image styles*/
+			#about img {
+				z-index: 1;
+				margin-left: 25%;
+			}
+
+			/*Text in about section*/
+			#about p {
+				width: 50%;
+				top: 300px;
+				position: absolute;
+				z-index: 2;
+			}
+
+			.about-content {
+				padding-left: 20%;
+			}
+
+			/*footer*/
+			/*footer styles*/
+			footer {
+				color: #fff;
+				margin-top: 50px;
+			}
+
+			.site-info {
+				margin: 0 auto;
+				padding: 0 100px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+			
+			footer span {
+				font-size: 75%;
+				display: inline-flex;
+			}
+
+			.human-icon {
+				height: 20px;
+			    width: 20px;
+			    fill: #f3a712;
+			}
+
+/*--------------------------------------------------------------
+## Media Queries
+--------------------------------------------------------------*/
+@media screen and (max-width: 1024px) { 
+
+	h1, h2, h3, #landing p {
+		font-size: 170%;
+	}
+	#about p, {
+		font-size: 100%;
+		top: 40%;
+		padding-left: 10px;
+	}
+
+	p {
+		font-size: 100%;
+	}
+
+	.site-branding h1 {
+    	margin: 20px;
+	}
+
+	.about-content {
+		padding-left: 0;
+	}
+
+	.landing-video {
+		top: 0;
+		left: 0;
+		transform: none;
+	}
+
+	.site-branding {
+	width: 400px;
+	padding-left: 20px;
+	}
+
+	.navicon-button {
+		display: inline-flex;
+		margin-right: 10px;
+    	position: absolute;
+   	 	right: 0;
+	}
+
+	.nav-wrap {
+		max-height: 0;
+	}
+
+	footer {
+		font-size: 100%;
+	}
+}
+
+@media screen and (max-width: 839px) { 
+	footer {
+		font-size: 90%;
+	}
+
+	.human-icon {
+		width: 10px;
+		height: 10px;
+	}
+ } 
+
+@media screen and (max-width: 480px) { 
+	#about img {
+		margin-left: 0;
+	}
+
+	.site-info {
+		padding: 0 10px;
+	}
+}
+
+
+/*--------------------------------------------------------------
+## CSS Animations
+--------------------------------------------------------------*/
+
+@keyframes POINT_DOWN {
+  0% {
+    -webkit-transform: translateY(-15%);
+            transform: translateY(-15%);
+  }
+  50% {
+    -webkit-transform: translateY(15%);
+            transform: translateY(15%);
+  }
+  100% {
+    -webkit-transform: translateY(-15%);
+            transform: translateY(-15%);
+  }
+}
