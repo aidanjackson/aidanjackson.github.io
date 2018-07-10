@@ -369,7 +369,7 @@ a:hover, a:active {
 	}
  } 
 
-@media only screen and (max-deviwidth: 1024px) { 
+@media only screen and (max-device-width: 1024px) { 
 
 	h1, h2, h3, #landing p {
 		font-size: 170%;
