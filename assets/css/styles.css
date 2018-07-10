@@ -344,7 +344,7 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Media Queries
 --------------------------------------------------------------*/
-@media screen and (max-width: 480px) { 
+@media screen and (min-width: 480px) { 
 	#about img {
 		margin-left: 0;
 	}
@@ -354,7 +354,7 @@ a:hover, a:active {
 	}
 }
 
-@media screen and (max-width: 839px) { 
+@media screen and (min-width: 839px) { 
 	footer {
 		font-size: 90%;
 	}
@@ -369,7 +369,7 @@ a:hover, a:active {
 	}
  } 
 
-@media screen and (max-width: 1024px) { 
+@media screen and (min-width: 1024px) { 
 
 	h1, h2, h3, #landing p {
 		font-size: 170%;
