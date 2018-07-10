@@ -32,7 +32,7 @@ a:hover, a:active {
 	z-index: -1;
 	content: '';
 	position: absolute;
-	background-image: url("assets/raster/billie-holiday.png");
+	background-image: url("assets/imgs/billie-holiday.png");
 	background-repeat: repeat;
 	background-color: rgba(0, 0, 0, 0.5);
 	width: 100%;
