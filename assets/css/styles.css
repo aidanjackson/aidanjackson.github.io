@@ -291,6 +291,10 @@ a:hover, a:active {
 				text-align: center;
 			}
 
+			#contact p {
+				text-align: center;
+			}
+
 			/*About*/
 			/*about section styles*/
 			#about {
