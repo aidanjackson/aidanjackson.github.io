@@ -305,14 +305,17 @@ a:hover, a:active {
 			#about img {
 				z-index: 1;
 				margin-left: 25%;
+				width: 100%;
+    			height: auto;
 			}
 
 			/*Text in about section*/
 			#about p {
 				width: 50%;
-				top: 300px;
+				top: 30%;
 				position: absolute;
 				z-index: 2;
+				font-size: 90%;
 			}
 
 			.about-content {
@@ -333,10 +336,17 @@ a:hover, a:active {
 				align-items: center;
 				justify-content: space-between;
 			}
+
+			.site-info p {
+				padding: 0 5%;
+				font-size: 65%;
+				text-align: center;
+			}
 			
 			footer span {
-				font-size: 75%;
+				font-size: 50%;
 				display: inline-flex;
+				align-items: center;
 			}
 
 			.human-icon {
@@ -350,9 +360,13 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 @media only screen and (max-device-width: 480px) { 
 
+	#landing p {
+		font-size: 100%;
+	}
+
 	.human-icon {
-		width: 10px;
-		height: 10px;
+		width: 20px;
+		height: 20px;
 	}
 
 	.site-landing {
