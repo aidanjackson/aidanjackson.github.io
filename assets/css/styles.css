@@ -151,6 +151,12 @@ a:hover, a:active {
 			  right: 2.5px;
 			}
 
+			.screen-reader-text { 
+  				position: absolute;
+  				top: -9999px;
+  				left: -9999px;
+			}
+
 			/*Home and about specific text styles*/
 			#landing p, #about p, p, span {
 				color: #f3a712;
