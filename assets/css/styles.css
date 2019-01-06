@@ -176,7 +176,7 @@ a:hover, a:active {
 				width: 100%;
 				padding-top: 5%;
 				padding-left: 25px;
-				font-size: 65%;
+				font-size: 55%;
 			}
 
 			.site-branding h1 {
@@ -274,13 +274,13 @@ a:hover, a:active {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				width: 50%;
+				width: 70%;
 				height: 50%;
 				overflow: auto;
 				margin: auto;
 				position: absolute;
 				top: 0; left: 0; bottom: 0; right: 0;
-				font-size: 120%;
+				font-size: 90%;
 				z-index: 1;
 			}
 
@@ -311,10 +311,10 @@ a:hover, a:active {
 			/*about image styles*/
 			#about img {
 				z-index: 1;
-				margin-left: 25%;
+				margin-left: 15%;
 				width: 100%;
     			height: auto;
-    			max-width: 400px;
+    			max-width: 250px;
 			}
 
 			/*Text in about section*/
@@ -323,11 +323,7 @@ a:hover, a:active {
 				top: 30%;
 				position: absolute;
 				z-index: 2;
-				font-size: 90%;
-			}
-
-			.about-content {
-				padding-left: 20%;
+				font-size: 70%;
 			}
 
 			/*footer*/
@@ -367,10 +363,6 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 @media only screen and (min-device-width: 0px) { 
 
-	#landing p {
-		font-size: 100%;
-	}
-
 	.human-icon {
 		width: 20px;
 		height: 20px;
@@ -386,6 +378,28 @@ a:hover, a:active {
 }
 
 @media only screen and (min-device-width: 768px) { 
+
+	#landing p {
+		font-size: 120%;
+	}
+
+	.site-landing {
+		height: 90vh;
+	}
+
+	.site-branding {
+		font-size: 90%;
+	}
+
+	#about img {
+    	margin: 0 auto;
+    	max-width: 400px;
+    	display: block;
+	}
+
+	#about p {
+		font-size: 100%;
+	}
 	
 	footer {
 		font-size: 90%;
@@ -414,10 +428,6 @@ a:hover, a:active {
 
 	.site-branding h1 {
     	margin: 20px;
-	}
-
-	.about-content {
-		padding-left: 0;
 	}
 
 	.landing-video {
